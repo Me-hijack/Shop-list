@@ -90,13 +90,13 @@ label {
     font-family: 'Roboto';
     color: #FFFFFF;
 }
-span::before {
+.comment::before {
     content: '(';
 }
-span::after {
+.comment::after {
     content: ')';
 }
-span {
+.comment:nth-child(2) {
     font-size: 11px;
 }
 
@@ -117,4 +117,53 @@ h2 {
     margin: 0 auto;
     padding: 12px;
 }
+
+/* COPIED */
+input[type="checkbox"] {
+    visibility: hidden;
+}
+input[type="checkbox"] + label {
+    padding-left:20px;
+	height:16px; 
+	display:inline-block;
+	line-height:15px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	font-size:15px;
+	vertical-align:middle;
+	cursor:pointer;
+    background-image: url(./img/tick.png);
+    /* background-image: url(./img/tick.png); */
+    margin: 14px 16px 14px;
+    
+}
+input[type="checkbox"]:checked + label {
+    background-position: 0 -17px;
+}
+input [type="checkbox"] {
+    margin-left: -30px;
+}
+li {
+    position:relative;
+}
+input {
+    position:absolute;
+}
+input[type="checkbox"] + label {
+    padding-left: 12px 16px 12px;
+    margin-left: 18px;
+}
+.item {
+    padding-left: 13px;
+}
+/* label span{
+vertical-align: middle;
+} */
+/* label {
+    background-image: url(../img/tick.png);
+    margin: -20px;
+} */
+
+/* BG */
+
 
